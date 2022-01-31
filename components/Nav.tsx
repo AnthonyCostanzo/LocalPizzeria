@@ -1,0 +1,32 @@
+import Head from 'next/head';
+import NavItem from '../components/NavItem';
+import Image from 'next/image';
+import { DefaultProps } from '../utils/models';
+
+const Nav = ({ title, description }: DefaultProps) => (
+  <>
+    <Head>
+      {title && <title>{{ title }}</title>}
+      {description && <meta name="description" content="description" />}
+    </Head>
+    <nav className="">
+      <ul className="mt-5 flex w-full p-2 space-x-5 items-center justify-center md:justify-around">
+        <li>
+          {' '}
+          <Image
+            alt="pizza logo"
+            height={50}
+            width={80}
+            className="rounded-full"
+            src="https://image.similarpng.com/very-thumbnail/2020/05/Pizza-logo-design-template-Vector-PNG.png"
+          />
+        </li>
+        <NavItem name="Home" />
+        <NavItem name="Gallery" />
+        <NavItem name="Contact" />
+      </ul>
+    </nav>
+  </>
+);
+
+export default Nav;
