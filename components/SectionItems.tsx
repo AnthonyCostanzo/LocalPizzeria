@@ -19,7 +19,7 @@ let selected = 'selection:bg-slate-100 selection:text-slate-800';
 
 const SectionItems = () => {
   return (
-    <div className=" w-full grid grid-cols-1 divide-y divide-gray-600 bg-slate-900 md:space-x-8 md:flex md:justify-center md:divide-none">
+    <div className=" w-full grid grid-cols-1 divide-y divide-gray-600 md:space-x-8 md:flex md:justify-center md:divide-none">
       <SectionDiv>
         <TruckIcon className="m-2 h-10 p-2  bg-white rounded-full  text-slate-800 " />
         <h3 className={selected}>Free Delivery</h3>
